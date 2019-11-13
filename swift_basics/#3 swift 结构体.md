@@ -46,6 +46,13 @@ sport.description
 
 
 
+计算属性的特点：
+
+1. 必须显式的声明属性类型，比如 **`var description: String {}`**
+2. 必须是一个变量，不能是常量， 即使用 **`var`** 声明变量
+
+
+
 > 2.属性观察器
 
 当属性值发生变化前或后，可以做一些操作，相当于一个生命周期钩子。 **`didSet`** 用的比较多， **`willSet`** 用得比较少
@@ -66,6 +73,15 @@ progress.amount = 100 // 打印 homework has done 100%
 ```
 
 可以看出在初始化之后， **`amount`** 属性发生变化时，都会触发 **`didSet`** 
+
+
+
+属性观察器的特点：
+
+1. 必须显式的声明属性类型，比如 **`var amount: Int {}`**
+2. 必须是一个变量，不能是常量，因为常量不会发生变化， 即使用 **`var`** 声明变量
+
+
 
 
 
@@ -148,7 +164,7 @@ person.tree
 
 > 5. 静态属性和方法
 
-这个和其他语言基本类似， 静态属性和方法属于结构体或者类自身，而不是属性某个实例，从而可以实现共享数据。
+这个和其他语言基本类似， 静态属性和方法属于结构体或者类自身，而不是属于某个实例，从而可以实现共享数据。
 
 ```swift
 struct User {
@@ -171,6 +187,38 @@ var user2 = User()
 print(User.count) // 2
 print(User.printCount) // 2
 ```
+
+
+
+
+
+关于结构体需要注意的是：
+
+- swift中实例化结构体时，**要确保给每一个属性都存在值（除lazy标记的属性）**
+
+- 当有私有属性时，初始化要注意
+
+  ```swift
+  struct Doctor {
+    var name: String
+    private var location = "US"
+  }
+  // 尝试初始化
+  let d = Doctor(name: "John")
+  // 抛出错误 'Doctor' initializer is inaccessible due to 'private' protection level
+  
+  
+  // 解决办法
+  struct Doctor {
+    var name: String
+    private var location = "US"
+    // 提供一个构造器
+    init(name: String) {
+      self.name = name
+    }
+  }
+  ```
+
 
 
 
