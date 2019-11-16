@@ -99,34 +99,34 @@ class Singer {
   var name = "Taylor swift"
 }
 
-var singler1 = Singer()
+var singer1 = Singer()
 print(singer1.name) // "Taylor swift"
 
 // 变量2
-var singler2 = singler1
-singler2.name = "Justin Biber"
+var singer2 = singer1
+singer2.name = "Justin Biber"
 
-print(singler1.name) // "Justin Biber"
+print(singer1.name) // "Justin Biber"
 ```
 
-**`singler1`** 和 **`singler2`** 2个变量指向同一个内存地址。
+**`singer1`** 和 **`singer2`** 2个变量指向同一个内存地址。
 
-假如将 **`Singler`** 换成结构体:
+假如将 **`Singer`** 换成结构体:
 
 ```swift
 struct Singer {
   var name = "Taylor swift"
 }
 
-var singler1 = Singer()
+var singer1 = Singer()
 print(singer1.name) // "Taylor swift"
 
 // 变量2 值类型， 分配不同的内存空间
-var singler2 = singler1
-singler2.name = "Justin Biber"
+var singer2 = singer1
+singer2.name = "Justin Biber"
 
-// singler1 和 singler2 不会相互影响
-print(singler1.name) // "Taylor swift"
+// singer1 和 singer2 不会相互影响
+print(singer1.name) // "Taylor swift"
 ```
 
 
