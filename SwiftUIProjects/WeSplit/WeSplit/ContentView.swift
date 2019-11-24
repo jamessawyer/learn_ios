@@ -6,11 +6,14 @@
 //  Copyright © 2019 oscar. All rights reserved.
 //
 
+// 100 Days of SwiftUI Project 1 - WeSplit
+// https://www.hackingwithswift.com/100/swiftui/16
+
 import SwiftUI
 
 struct ContentView: View {
     @State private var amount = ""
-    @State private var numberOfPeople = 2
+    @State private var numberOfPeople = "2"
     @State private var tipPercentage = 2
     let tipsPercentages = [10, 15, 20, 25, 0]
     
@@ -24,7 +27,7 @@ struct ContentView: View {
     
     // 每人平均多少钱 （计算属性）
     var averageAmount: Double {
-        let peopleTotal = Double(numberOfPeople + 2) // 总的人数
+        let peopleTotal = Double(numberOfPeople) ?? 0 + 2 // 总的人数
         return totalAmount / peopleTotal
     }
     
@@ -46,11 +49,14 @@ struct ContentView: View {
                     TextField("Total Money", text: $amount)
                         .keyboardType(.decimalPad)
                     
-                    Picker("Number of people", selection: $numberOfPeople) {
-                        ForEach(2 ..< 100) {
-                            Text("\($0) people")
-                        }
-                    }
+//                    Picker("Number of people", selection: $numberOfPeople) {
+//                        ForEach(2 ..< 100) {
+//                            Text("\($0) people")
+//                        }
+//                    }
+                    
+                    TextField("Number of people", text: $numberOfPeople)
+                        .keyboardType(.numberPad)
                                             
                 }
                 
