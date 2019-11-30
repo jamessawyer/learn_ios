@@ -248,7 +248,7 @@ AngularGradient(
 
 
 
-> 3. Button & Image & Alert & Spacer
+> 4. Button & Image & Alert & Spacer
 
 **`Button`**
 
