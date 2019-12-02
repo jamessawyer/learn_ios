@@ -8,6 +8,21 @@
 
 import SwiftUI
 
+/// 项目3 中的 任务3
+/// https://www.hackingwithswift.com/books/ios-swiftui/views-and-modifiers-wrap-up
+/// 视图组合：将部分视图提取出来 形成一个独立的小组件
+/// go back to project 2 and create a FlagImage() view that renders one flag image using the specific set of modifiers we had.
+struct FlagImage: View {
+    var name: String
+    var body: some View {
+        Image(name)
+            .renderingMode(.original)
+            .clipShape(Capsule()) // 4种形状 rectangle | rounded rectangle | capsule | circle
+            .overlay(Capsule().stroke(Color.black, lineWidth: 1)) // 使用 overlay 绘制一个border
+            .shadow(color: .black, radius: 2)
+    }
+}
+
 struct ContentView: View {
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Monaco", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2) // 产生一个0-2之间的随机值
@@ -40,11 +55,12 @@ struct ContentView: View {
                     Button(action: {
                         self.flagTapped(number)
                     }) {
-                        Image(self.countries[number])
-                            .renderingMode(.original)
-                            .clipShape(Capsule()) // 4种形状 rectangle | rounded rectangle | capsule | circle
-                            .overlay(Capsule().stroke(Color.black, lineWidth: 1)) // 使用 overlay 绘制一个border
-                            .shadow(color: .black, radius: 2)
+                        FlagImage(name: self.countries[number])
+//                        Image(self.countries[number])
+//                            .renderingMode(.original)
+//                            .clipShape(Capsule()) // 4种形状 rectangle | rounded rectangle | capsule | circle
+//                            .overlay(Capsule().stroke(Color.black, lineWidth: 1)) // 使用 overlay 绘制一个border
+//                            .shadow(color: .black, radius: 2)
                     }
                     
                 }
