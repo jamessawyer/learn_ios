@@ -71,7 +71,11 @@ struct ContentView: View {
                 }
                 
                 Section(header: Text("Total Amount")) {
+                    // https://www.hackingwithswift.com/books/ios-swiftui/views-and-modifiers-wrap-up
+                    // 项目3 任务2
+                    // Go back to project 1 and use a conditional modifier to change the total amount text view to red if the user selects a 0% tip.
                     Text("$\(totalAmount, specifier: "%.2f")")
+                        .foregroundColor(tipsPercentages[tipPercentage] == 0 ? Color.red : Color.black)
                 }
                 
                 Section(header: Text("Amount per person")) {
