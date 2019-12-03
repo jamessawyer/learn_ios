@@ -500,7 +500,7 @@ struct GridStack<Content: View>: View {
   var body: some View {
     VStack {
       ForEach(0 ..< rows) { row in
-        HStack { row in
+        HStack {
 					ForEach(0 ..< self.columns) { column in
 						self.content(row, column)
 					}
@@ -532,7 +532,7 @@ struct GridStack<Content: View>: View {
   var body: some View {
     VStack {
       ForEach(0 ..< rows) { row in
-        HStack { row in
+        HStack {
 					ForEach(0 ..< self.columns) { column in
 						self.content(row, column)
 					}
