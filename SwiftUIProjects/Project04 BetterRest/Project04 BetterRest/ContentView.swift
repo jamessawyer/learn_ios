@@ -2,7 +2,7 @@
 // https://www.hackingwithswift.com/100/swiftui/26
 // https://www.hackingwithswift.com/100/swiftui/27
 // https://www.hackingwithswift.com/books/ios-swiftui/betterrest-wrap-up
-// challenge参考 https://github.com/waynedahlberg/100-Days-Of-SwiftUI/blob/master/Day%20008%20-%20Pickers/Day%20008%20-%20Pickers/ContentView.swift
+// challenge参考 https://github.com/roblack/100DaysOfSwiftUI/blob/master/BetterRest/BetterRest/ContentView.swift
 //  ContentView.swift
 //  Project04 BetterRest
 //
@@ -34,7 +34,7 @@ struct ContentView: View {
     }
     @State private var wakeUp = defaultWakeUpDate
     @State private var sleepAmount = 8.0
-    @State private var coffeeAmount = 0
+    @State private var coffeeAmount = 1
     
     @State private var msgTitle = ""
     @State private var msgContent = ""
@@ -61,11 +61,11 @@ struct ContentView: View {
                         }
                     }
                     Section(header: Text("Daily coffee intake").font(.headline)) {
-                        Picker("Number of cup\(coffeeAmount == 0 ? "" : "s")", selection: $coffeeAmount) {
+                        Picker("", selection: $coffeeAmount) {
                             /// ForEach 里面的 Range 和 ClosedRange 的区别
                             ///https://stackoverflow.com/questions/59082927/swiftui-foreach-open-vs-closed-range
                             ForEach(1...20, id: \.self) { num in
-                                Text("\(num)")
+                                num == 1 ? Text("\(num) cup") : Text("\(num) cups")
                             }
                         }
                         .labelsHidden()
