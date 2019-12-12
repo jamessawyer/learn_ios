@@ -3,8 +3,14 @@ Awesome-swift related blogs, articles and resources
 ## 1.Swift比较好的学习网站
 
 ## 1.1 英文网站
-  1. [HackingWithSwift](https://www.hackingwithswift.com/)
+  1. [✨HackingWithSwift](https://www.hackingwithswift.com/)
   2. [Ashish Kakkad - swift](https://ashishkakkad.com/category/swift-language/)
+  3. [✨iOS Goodies - weekly](https://ios-goodies.com/)
+  4. [iOS Dev Weekly](https://iosdevweekly.com/)
+  5. [Swift Weekly](http://digest.swiftweekly.com/)
+  6. [✨Advanced Swift Topics(www.vadimbulavin.com) - 文章质量很高](https://www.vadimbulavin.com/)
+  7. [Appcoda weekly](http://digest.appcoda.com/)
+  8. [Awesome iOS newsletter](https://ios.libhunt.com/newsletter)
 
 ## 1.2 中文网站
   1. [the swift programming language 中文版本 - cnswift](https://www.cnswift.org/)
@@ -16,7 +22,7 @@ Awesome-swift related blogs, articles and resources
 
   1. [SwiftUI by Examples - HackingWithSwift](https://www.hackingwithswift.com/quick-start/swiftui)
   2. [SwiftUI articles - AppCoda](https://www.appcoda.com/?s=SWIFTUI)
-  3. [Advanced Swift Topics(www.vadimbulavin.com) - 文章质量很高](https://www.vadimbulavin.com/)
+
 
 
 ## 3.UIKit
