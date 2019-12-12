@@ -196,7 +196,7 @@ struct ContentView: View {
     	"Please enter a time",
     	selection: $wakeUp,
     	in: dateRange
-//    	in: now ...  // 或者只指定一个下限 没有上线
+//    	in: now ...  // 或者只指定一个下限 没有上限
     )
   }
 }
