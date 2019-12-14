@@ -1,4 +1,4 @@
-Awesome-swift related blogs, articles and resources
+Awesome iOS & swift related newsletters, blogs, articles and resources
 
 ## 1.Swift比较好的学习网站
 
@@ -22,6 +22,14 @@ Awesome-swift related blogs, articles and resources
 
   1. [SwiftUI by Examples - HackingWithSwift](https://www.hackingwithswift.com/quick-start/swiftui)
   2. [SwiftUI articles - AppCoda](https://www.appcoda.com/?s=SWIFTUI)
+  3. [Swift with Majid](https://swiftwithmajid.com/)
+
+### 2.2 中文博客
+
+
+### 2.3 SwiftUI 开源项目
+
+  1. [✨SwiftUI 项目合集 - GitHub](https://github.com/ygit/swiftui)
 
 
 
