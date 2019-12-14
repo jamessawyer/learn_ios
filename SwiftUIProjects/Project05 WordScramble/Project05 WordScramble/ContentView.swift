@@ -32,11 +32,6 @@
 /// 1.  .alert 修饰符的使用
 /// 2. guard let 解包语句的使用
 /// 3. NavigationView & navigationBarTitle & navigationBarItems
-  
-
-  
-
-  
 
 import SwiftUI
 
@@ -79,7 +74,6 @@ struct ContentView: View {
             }
         }
     }
-    
     
     // 添加新的词语
     func addNewWord() {
