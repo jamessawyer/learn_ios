@@ -32,6 +32,9 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
   1. [✨SwiftUI 项目合集 - GitHub](https://github.com/ygit/swiftui)
 
 
+### 2.4 SwiftUI Animations
+  1. [✨SwiftUI Animations - youtube nimbbble](https://www.youtube.com/watch?v=gN7xW2YyoBA&list=PLTz6PJ9dfcu30W4CDtFv7f2PAoFMn0Xmb)
+
 
 ## 3.UIKit
 
