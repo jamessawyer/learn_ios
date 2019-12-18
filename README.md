@@ -43,6 +43,13 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
 ### 4.1 UserDefault的用法
   - [The Advanced Guide to UserDefaults in Swift(www.vadimbulavin.com)](https://www.vadimbulavin.com/advanced-guide-to-userdefaults-in-swift/)
 
+### 4.2 Timer
+定时器，类似于js中的 **`setTimeout | setInterval`**
+  1. [How to Build an iOS App with Swift - Stop Watch youtube](https://www.youtube.com/watch?v=pe8hN7r5ZuE&list=PLHmNdpdzx21E6seWDIDrFDMmwhaldMA0V)
+  2. [✨the ultimate guide to timer - HackingWithSwift](https://www.hackingwithswift.com/articles/117/the-ultimate-guide-to-timer)
+  3. [Working With Timers In Swif - LearnAppMaking](https://learnappmaking.com/timer-swift-how-to/)
+  4. [Swift timer - 简书](https://www.jianshu.com/p/e3188e8aa1dc)
+
 ## 5.开源项目
 
 
