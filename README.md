@@ -11,6 +11,7 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
   6. [✨Advanced Swift Topics(www.vadimbulavin.com) - 文章质量很高](https://www.vadimbulavin.com/)
   7. [Appcoda weekly](http://digest.appcoda.com/)
   8. [Awesome iOS newsletter](https://ios.libhunt.com/newsletter)
+  9. [learnAppMaking](https://learnappmaking.com/blog/)
 
 ## 1.2 中文网站
   1. [the swift programming language 中文版本 - cnswift](https://www.cnswift.org/)
