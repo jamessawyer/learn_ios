@@ -30,6 +30,13 @@ struct ContentView: View {
     @State private var scoreTitle = ""
     @State private var score = 0
     @State private var alertMessage = ""
+    
+    /// Day 34 of 100DaysOfSwiftUI challenge
+    /// 回答正确添加一个动画效果
+    /// https://www.hackingwithswift.com/books/ios-swiftui/animation-wrap-up
+    @State private var opacityAmount = 1.0
+    @State private var rotationAmount = 0.0
+    @State private var wrongRotationAmount = [0.0, 0.0, 0.0]
 
     
     var body: some View {
@@ -50,17 +57,18 @@ struct ContentView: View {
                         .fontWeight(.black)
                 }
                 
-               
+                /// ForEach 只能添加一个 Range 类型， 而不能是一个 ClosedRange 类型
                 ForEach (0 ..< 3) { number in
                     Button(action: {
+                        self.opacityAmount = 0.8
                         self.flagTapped(number)
                     }) {
                         FlagImage(name: self.countries[number])
-//                        Image(self.countries[number])
-//                            .renderingMode(.original)
-//                            .clipShape(Capsule()) // 4种形状 rectangle | rounded rectangle | capsule | circle
-//                            .overlay(Capsule().stroke(Color.black, lineWidth: 1)) // 使用 overlay 绘制一个border
-//                            .shadow(color: .black, radius: 2)
+                            .opacity(self.correctAnswer == number ? 1 : self.opacityAmount)
+                            // 回答正确的Item 的翻转效果
+                            .rotation3DEffect(.degrees(self.correctAnswer == number ? self.rotationAmount : 0), axis: (x: 0, y: 1, z: 0))
+                            // 其余的错误的Items 不使用动画效果
+                            .rotation3DEffect(.degrees(self.wrongRotationAmount[number]), axis: (x: 0, y: 1, z: 0))
                     }
                     
                 }
@@ -85,9 +93,20 @@ struct ContentView: View {
             scoreTitle = "Correct"
             score += 1
             alertMessage = "You're so bright!"
+            
+            /// 使用显式动画
+            withAnimation(.interpolatingSpring(stiffness: 20, damping: 5)) {
+                self.rotationAmount = 360
+            }
+
         } else {
             scoreTitle = "Wrong"
             alertMessage = "Wrong! That’s the flag of \(countries[number])"
+            
+            withAnimation(.interpolatingSpring(mass: 1, stiffness: 120, damping: 40, initialVelocity: 200)) {
+                self.wrongRotationAmount[number] = 0
+            }
+            
         }
         
         showAlert = true
@@ -97,6 +116,13 @@ struct ContentView: View {
     func askQuestion() {
         countries = countries.shuffled() // 将国家顺序进行混淆
         correctAnswer = Int.random(in: 0 ... 2)
+        
+        /// 回答完之后将动画值重置
+        withAnimation(.easeInOut) {
+            self.opacityAmount = 1.0
+        }
+        self.rotationAmount = 0.0
+        wrongRotationAmount = Array(repeating: 0.0, count: 3)
     }
         
 //        Button(action: {
