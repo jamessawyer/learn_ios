@@ -51,6 +51,10 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
   3. [Working With Timers In Swif - LearnAppMaking](https://learnappmaking.com/timer-swift-how-to/)
   4. [Swift timer - 简书](https://www.jianshu.com/p/e3188e8aa1dc)
 
+### 4.3 如何优雅处理API数据
+这个主要是讲如何封装后台传递过来的数据：
+  1. [Writing a Scalable API Client in Swift 5 - Medium](https://medium.com/makingtuenti/writing-a-scalable-api-client-in-swift-4-b3c6f7f3f3fb) & [MarvelAPI - github](https://github.com/victorpimentel/MarvelAPI)
+
 ## 5.开源项目
 
 
