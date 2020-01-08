@@ -12,6 +12,7 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
   7. [Appcoda weekly](http://digest.appcoda.com/)
   8. [Awesome iOS newsletter](https://ios.libhunt.com/newsletter)
   9. [learnAppMaking](https://learnappmaking.com/blog/)
+  10. [the swift dev - 包含swift多种设计模式](https://theswiftdev.com/articles/)
 
 ## 1.2 中文网站
   1. [the swift programming language 中文版本 - cnswift](https://www.cnswift.org/)
@@ -23,7 +24,7 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
 
   1. [SwiftUI by Examples - HackingWithSwift](https://www.hackingwithswift.com/quick-start/swiftui)
   2. [SwiftUI articles - AppCoda](https://www.appcoda.com/?s=SWIFTUI)
-  3. [Swift with Majid](https://swiftwithmajid.com/)
+  3. [✨Swift with Majid](https://swiftwithmajid.com/)
 
 ### 2.2 中文博客
 
