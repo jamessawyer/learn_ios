@@ -71,7 +71,7 @@ class GameViewController: UIViewController {
     game.delegate = self // 将当前VC 赋值给game的delegate属性
   }
   
-  @IBAction func next() {
+  @IBAction func play() {
     game.start()
   }
   
@@ -133,12 +133,22 @@ class Game {
 }
 
 class GameViewController: UIViewController {
+  private let game: Game
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     game.handler = { [weak self] state in
       self?.render(state)
     }
+  }
+  
+  @IBAction func play() {
+    game.start()
+  }
+  
+  @IBAction func next() {
+    game.generateNextValue()
   }
 }
 extension GameViewController {
@@ -157,7 +167,7 @@ extension GameViewController {
 
 
 
-委托是iOS中最常见的一种设计模式，一定要掌握.
+委托是iOS中最常见的一种设计模式，一定要掌握. 还有使用闭包方式解决相同的问题。
 
 
 
