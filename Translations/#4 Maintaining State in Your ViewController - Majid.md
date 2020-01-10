@@ -133,7 +133,7 @@ extension StatePresentable {
 }
 ```
 
-这里使用 **`StatePresentable`** 协议扩展 Activity 和 Error 协。 StatePresentable 有一个关联类型 **`Data`** ，这个类型也是 **`State`** 枚举中的泛型约束,使其适用于任何类型的数据,同时对 **`render`** 方法添加了默认的实现。
+这里使用 **`StatePresentable`** 协议扩展 Activity 和 Error 协议。 StatePresentable 有一个关联类型 **`Data`** ，这个类型也是 **`State`** 枚举中的泛型约束,使其适用于任何类型的数据,同时对 **`render`** 方法添加了默认的实现。
 
 使用：
 
