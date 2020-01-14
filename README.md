@@ -14,6 +14,7 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
   9. [learnAppMaking](https://learnappmaking.com/blog/)
   10. [the swift dev - 包含swift多种设计模式](https://theswiftdev.com/articles/)
   11. [learn swift综合性收藏](https://theswiftdev.com/2020/01/06/what-are-the-best-practices-to-learn-ios-swift-in-2020/)
+  12 [appventure.me Swift in depth](http://appventure.me/)
 
 ## 1.2 中文网站
   1. [the swift programming language 中文版本 - cnswift](https://www.cnswift.org/)
