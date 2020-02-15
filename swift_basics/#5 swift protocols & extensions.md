@@ -25,7 +25,7 @@
 
 ```swift
 // 定义一个协议
-protocal Identifiable {
+protocol Identifiable {
   // id 可以是 存储属性 也可以是计算属性
   var id: String { get set }
   func identify()
@@ -56,7 +56,7 @@ protocol Payable {
   func calculateWages() -> Int
 }
 
-protocal NeedsTraining {
+protocol NeedsTraining {
   func study()
 }
 
@@ -64,7 +64,7 @@ protocol HasVacation {
   func takeVacation(days: Int)
 }
 
-protocal Employee: Payable, NeedsTraining, HasVacation {}
+protocol Employee: Payable, NeedsTraining, HasVacation {}
 ```
 
 
@@ -119,7 +119,7 @@ print(a) // 100
 扩展遵循某个协议：
 
 ```swift
-extension SomeType: SomeProtocal, AnotherProtocal {}
+extension SomeType: SomeProtocol, AnotherProtocol {}
 ```
 
 
@@ -158,7 +158,7 @@ Ringo
 扩展给协议提供默认实现：
 
 ```swift
-protocal Identifiable {
+protocol Identifiable {
   var id: String { get set } // get || get & set 访问器属性不能省
   func identify()
 }
