@@ -15,6 +15,7 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
   10. [the swift dev - 包含swift多种设计模式](https://theswiftdev.com/articles/)
   11. [learn swift综合性收藏](https://theswiftdev.com/2020/01/06/what-are-the-best-practices-to-learn-ios-swift-in-2020/)
   12. [appventure.me Swift in depth](http://appventure.me/)
+  13. [fluffy iOS实战开发tips](https://fluffy.es/archive/)
 
 ## 1.2 中文网站
   1. [the swift programming language 中文版本 - cnswift](https://www.cnswift.org/)
@@ -58,7 +59,15 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
 这个主要是讲如何封装后台传递过来的数据：
   1. [Writing a Scalable API Client in Swift 5 - Medium](https://medium.com/makingtuenti/writing-a-scalable-api-client-in-swift-4-b3c6f7f3f3fb) & [MarvelAPI - github](https://github.com/victorpimentel/MarvelAPI)
 
+### 4.4 iOS13和之前版本break变化
+
+  1. [5 breaking changes to check before building your app for iOS 13 - fluffy](https://fluffy.es/4-ios13-breaking-changes/)
+
 ## 5.开源项目
 
 
 ## 6.常用组件库
+
+> 6.1 布局相关的
+
+  1. [SnapKit](https://github.com/SnapKit/SnapKit)
