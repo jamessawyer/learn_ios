@@ -16,6 +16,7 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
   11. [learn swift综合性收藏](https://theswiftdev.com/2020/01/06/what-are-the-best-practices-to-learn-ios-swift-in-2020/)
   12. [appventure.me Swift in depth](http://appventure.me/)
   13. [fluffy iOS实战开发tips](https://fluffy.es/archive/)
+  14. [thoughtbot.com](https://thoughtbot.com/blog/ios)
 
 ## 1.2 中文网站
   1. [the swift programming language 中文版本 - cnswift](https://www.cnswift.org/)
@@ -55,15 +56,21 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
   3. [Working With Timers In Swif - LearnAppMaking](https://learnappmaking.com/timer-swift-how-to/)
   4. [Swift timer - 简书](https://www.jianshu.com/p/e3188e8aa1dc)
 
-### 4.3 如何优雅处理API数据
-这个主要是讲如何封装后台传递过来的数据：
-  1. [Writing a Scalable API Client in Swift 5 - Medium](https://medium.com/makingtuenti/writing-a-scalable-api-client-in-swift-4-b3c6f7f3f3fb) & [MarvelAPI - github](https://github.com/victorpimentel/MarvelAPI)
 
-### 4.4 iOS13和之前版本break变化
+### 4.3 iOS13和之前版本break变化
 
   1. [5 breaking changes to check before building your app for iOS 13 - fluffy](https://fluffy.es/4-ios13-breaking-changes/)
 
-## 5.开源项目
+
+## 5.最佳实践
+
+### 5.1 如何优雅处理API数据
+这个主要是讲如何封装后台传递过来的数据：
+  1. [Writing a Scalable API Client in Swift 5 - Medium](https://medium.com/makingtuenti/writing-a-scalable-api-client-in-swift-4-b3c6f7f3f3fb) & [MarvelAPI - github](https://github.com/victorpimentel/MarvelAPI)
+
+### 5.2 iOS如何设置环境变量
+针对不同的开发阶段，对应不同的配置，比如： **debug & stagging & release** 下使用不同后台url,和其它的一些keys：
+  1. [let's setup your ios environments - thoughtbot.com](https://thoughtbot.com/blog/let-s-setup-your-ios-environments)
 
 
 ## 6.常用组件库
