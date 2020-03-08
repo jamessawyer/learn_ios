@@ -78,3 +78,10 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
 > 6.1 布局相关的
 
   1. [SnapKit](https://github.com/SnapKit/SnapKit)
+
+
+
+> 6.2 网络图片处理
+
+  1. [Kingfisher - iOS10+](https://github.com/onevcat/Kingfisher)
+    - [Kingfisher cheatsheet 中文翻译](https://github.com/jamessawyer/learn_ios/blob/master/Swift%E5%B8%B8%E7%94%A8%E5%BA%93%E6%96%87%E6%A1%A3/%231%20Kingfisher%20(%E5%9B%BE%E7%89%87%E4%B8%8B%E8%BD%BD%E7%BC%93%E5%AD%98%E7%9B%B8%E5%85%B3).md)
