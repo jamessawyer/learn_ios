@@ -95,3 +95,4 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
   1. [iOS good practices](https://github.com/futurice/ios-good-practices)
   2. [Awesome-Swift-Playgrounds](https://github.com/uraimo/Awesome-Swift-Playgrounds)
   3. [Open source iOS apps](https://github.com/dkhamsing/open-source-ios-apps)
+  4. [awesome iOS - github](https://github.com/vsouza/awesome-ios)
