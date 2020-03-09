@@ -20,6 +20,8 @@ Awesome iOS & swift related newsletters, blogs, articles and resources
 
 ## 1.2 中文网站
   1. [the swift programming language 中文版本 - cnswift](https://www.cnswift.org/)
+  2. [戴铭 - 阿里巴巴高级技术专家](https://ming1016.github.io/categories/Programming/)
+    - [iOS 开发舆图（必读） - 戴铭](https://ming1016.github.io/2019/07/29/ios-map/)
 
 
 ## 2.SwiftUI
